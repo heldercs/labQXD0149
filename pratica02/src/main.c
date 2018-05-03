@@ -106,7 +106,6 @@ void ledInit( ){
 	 *-----------------------------------------------------------------------------*/
 	val_temp = HWREG(SOC_GPIO_1_REGS+GPIO_OE);
 	val_temp &= ~(1<<21);
-    val_temp |= (0<<21);
 	
 	HWREG(SOC_GPIO_1_REGS+GPIO_OE) = val_temp;
 		
