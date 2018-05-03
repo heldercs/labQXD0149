@@ -94,7 +94,7 @@ void ledInit( ){
 	/*-----------------------------------------------------------------------------
 	 *  configure clock GPIO in clock module
 	 *-----------------------------------------------------------------------------*/
-	HWREG(SOC_CM_PER_REGS+CM_PER_GPIO1) |= (1<< CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK | CM_PER_GPIO1_CLKCTRL_MODULEMODE_ENABLE);
+	HWREG(SOC_CM_PER_REGS+CM_PER_GPIO1) |= (CM_PER_GPIO1_CLKCTRL_OPTFCLKEN_GPIO_1_GDBCLK | CM_PER_GPIO1_CLKCTRL_MODULEMODE_ENABLE);
 	
 	/*-----------------------------------------------------------------------------
 	 * configure mux pin in control module
